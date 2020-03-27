@@ -1,21 +1,22 @@
 //TODO: STEP 1 - Import the useState hook.
 import React, { useState } from "react";
 import "./App.css";
-import Button from "./Button";
-import Buttons from "./Buttons";
+import Button from "./components/Button";
+import Buttons from "./components/Buttons";
 import BottomRow from "./BottomRow";
-import Container from "./Container";
-import Section from "./Section";
-import TeamCard from "./TeamCard";
-import TeamName from "./TeamName";
-import TeamScore from "./TeamScore";
-import Timer from "./Timer";
-import TopRow from "./TopRow";
+import Container from "./components/Container";
+import Section from "./components/Section";
+import TeamCard from "./components/TeamCard";
+import TeamName from "./components/TeamName";
+import TeamScore from "./components/TeamScore";
+import Timer from "./components/Timer";
+import TopRow from "./components/TopRow";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
+
   return (
     <Container>
       <Section className="scoreboard">
